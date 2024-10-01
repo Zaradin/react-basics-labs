@@ -4,10 +4,10 @@ const Task = (props) => {
     return (
         <div className="card" style={{backgroundColor: props.done ? 'lightgrey' : '#5bb4c4'}}>
             <p className="priority" style={{
-            backgroundColor: 
-                props.priority === 'low' ? 'green' : 
-                props.priority === 'medium' ? 'orange' : 
-                'red'
+                backgroundColor: 
+                    props.priority === 'low' ? 'green' : 
+                    props.priority === 'medium' ? 'orange' : 
+                    'red'
             }}>
             {props.priority}
             </p>
