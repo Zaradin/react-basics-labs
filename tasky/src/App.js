@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Task from './components/Task';
 import React, { useState } from 'react';
+import AddTaskForm from './components/Form';
 
 function App() {
   const [ taskState, setTaskState ] = useState({
@@ -37,7 +38,8 @@ return (
           markDone={() => doneHandler(index)}
           deleteTask = {() => deleteHandler(index)}
         />
-  ))}
+    ))}
+    <AddTaskForm />
     </div>
   );
 }
